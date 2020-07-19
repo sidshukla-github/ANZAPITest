@@ -1,3 +1,4 @@
+# Get base image from python
 FROM python:3 
 
 ADD AppInfo.py /
