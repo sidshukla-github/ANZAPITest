@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import sys
 import flask 
 from flask import request, jsonify
 
@@ -20,9 +21,15 @@ tagurlid = "https://api.github.com/repos/sidshukla-github/ANZAPITest/tags"
 
 
 
+if len(sys.argv) == 1:
+    authtoken = os.environ.get('AUTH_TOKEN')
+else:
+    authtoken = sys.argv[1] + sys.argv[2]
+
+
 
 headers = {
-    "Authorization" : os.environ['AUTH_TOKEN'],
+    "Authorization" : authtoken,
       "Content-Type": "application/json",
       "User-Agent" : "sidshukla-github"  
     }
