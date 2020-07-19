@@ -1,5 +1,5 @@
 steps:
     - name: 'gcr.io/cloud-builders/docker'
-      args: ['build', '-t', 'gcr.io/$PROJECT_ID/appinfo', '.']
+      args: ['build', '-t', 'gcr.io/$PROJECT_ID/appinfo:$TAG_NAME', '.']
 
 images: ['gcr.io/pure-night-216804/appinfo']
