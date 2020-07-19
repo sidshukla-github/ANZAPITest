@@ -3,4 +3,5 @@ steps:
       args: ['build', '-t', 'gcr.io/pure-night-216804/appinfo', '.']
     - name: 'gcr.io/cloud-builders/docker'
       args: ['push', 'gcr.io/pure-night-216804/appinfo']
-images: ['gcr.io/pure-night-216804/appinfo']
+images: 
+    - ['gcr.io/pure-night-216804/appinfo']
