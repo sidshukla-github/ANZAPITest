@@ -1,7 +1,11 @@
 # Get base image from python
 FROM python:3 
 
+# add main file AppInfo.py in this case to the container
+
 ADD AppInfo.py /
+
+# install flask
 
 RUN pip install flask
 
