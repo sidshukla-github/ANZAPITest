@@ -18,7 +18,7 @@ urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
 tagurlid = "https://api.github.com/repos/sidshukla-github/ANZAPITest/tags"
 
 headers = {
-    "Authorization" : "Token c5971a93ef283ada7700a1d8bbc042c528e45744",
+    "Authorization" : "Token 31f6e83cd4015769f9917f40724380cb526e0e33",
       "Content-Type": "application/json",
       "User-Agent" : "sidshukla-github"  
     }
