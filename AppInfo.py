@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 import flask 
 from flask import request, jsonify
 
@@ -17,8 +18,12 @@ urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
 
 tagurlid = "https://api.github.com/repos/sidshukla-github/ANZAPITest/tags"
 
+
+
+os.environ['Auth'] = 'Token fa7ba2a68acbab8c3934de29bd70e800d287ad82'
+
 headers = {
-    "Authorization" : "Token 31f6e83cd4015769f9917f40724380cb526e0e33",
+    "Authorization" : os.environ['Auth'],
       "Content-Type": "application/json",
       "User-Agent" : "sidshukla-github"  
     }
