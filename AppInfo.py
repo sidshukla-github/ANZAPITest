@@ -15,8 +15,10 @@ appdetail = {
 
 urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
 
+tagurlid = "https://api.github.com/repos/sidshukla-github/ANZAPITest/tags"
+
 headers = {
-    "Authorization" : "Token dc81e6fca81357528b4fc1e4f6c3b32473869021",
+    "Authorization" : "Token c5971a93ef283ada7700a1d8bbc042c528e45744",
       "Content-Type": "application/json",
       "User-Agent" : "sidshukla-github"  
     }
@@ -25,13 +27,18 @@ def invokegithubapi():
     
     response = requests.request("GET", urlid, headers=headers)
 
-    responsejson = response.json()[0]['sha']
-    print ("my response is ", responsejson)
+    responsesha = response.json()[0]['sha']
+
+    response = requests.request("GET", tagurlid, headers=headers)    
+
+    appversion = response.json()[0]['name']
+    #print ("my response is ", responsejson)
+
     appdetail = {
     "myapplication": [
         {
-            "version": "1.0",
-            "lastcommitsha": responsejson,
+            "version": appversion,
+            "lastcommitsha": responsesha,
             "description" : "pre-interview technical test"
         }
         ]
