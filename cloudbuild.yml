@@ -1,6 +1,6 @@
 steps:
     - name: 'gcr.io/cloud-builders/docker'
-      args: ['build', '-t', 'gcr.io/$PROJECT_ID/appinfo', '.']
+      #args: ['build', '-t', 'gcr.io/$PROJECT_ID/appinfo', '.']
       args: ['build',
          '--build-arg',
          'node_version=${_NODE_VERSION_1}',
@@ -8,5 +8,5 @@ steps:
          'gcr.io/$PROJECT_ID/appinfo-${_NODE_VERSION_1}',
          '.']
 substitutions:
-        _NODE_VERSION_1: V.15
+        _NODE_VERSION_1: v.15
 images: ['gcr.io/pure-night-216804/appinfo-${_NODE_VERSION_1}']
