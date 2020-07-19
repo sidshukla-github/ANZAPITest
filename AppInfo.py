@@ -20,10 +20,13 @@ tagurlid = "https://api.github.com/repos/sidshukla-github/ANZAPITest/tags"
 
 
 
-os.environ['Auth'] = 'Token fa7ba2a68acbab8c3934de29bd70e800d287ad82'
+os.environ['Auth'] = 'Token '
+os.environ['tok'] =  '03272b206fb3b8fb7a5bc90a9169233cde896eca'
+
+
 
 headers = {
-    "Authorization" : os.environ['Auth'],
+    "Authorization" : os.environ['Auth'] + os.environ['tok'],
       "Content-Type": "application/json",
       "User-Agent" : "sidshukla-github"  
     }
