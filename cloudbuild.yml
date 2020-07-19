@@ -8,5 +8,5 @@ steps:
          'gcr.io/$PROJECT_ID/appinfo-${_NODE_VERSION_1}',
          '.']
 substitutions:
-        _NODE_VERSION_1: $TAG_NAME
+        _NODE_VERSION_1: $SHORT_SHA
 images: ['gcr.io/pure-night-216804/appinfo-${_NODE_VERSION_1}']
