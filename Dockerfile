@@ -3,7 +3,9 @@ FROM python:3
 
 # add main file AppInfo.py in this case to the container
 
-ADD AppInfo.py /
+#ADD AppInfo.py /
+
+ADD ./* /
 
 # install flask
 
