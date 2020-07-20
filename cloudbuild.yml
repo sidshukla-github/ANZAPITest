@@ -6,5 +6,5 @@ steps:
          'gcr.io/$PROJECT_ID/appinfo:$SHORT_SHA',
          '.']
     - name: 'gcr.io/cloud-builders/docker'
-      entrypoint : './AppUT.py'
+      entrypoint : '/AppInfo.py'
 images: ['gcr.io/pure-night-216804/appinfo:$SHORT_SHA']
