@@ -18,9 +18,9 @@ def startunittest():
 
     response = requests.request("GET", urlid, headers=headers)
 
-    print ("response is ", response.content)
+    print ("response is ", response.status_code)
 
-    if response == 200:
+    if response.status_code == 200:
         sys.exit(0)
     else:
         sys.exit(-1)
