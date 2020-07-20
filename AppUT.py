@@ -46,7 +46,7 @@ def invokegithubapi():
         ]
         }
     #return appdetail
-    return "testing"
+    return -1
     #return jsonify(response.content)
 
 app = flask.Flask(__name__)
