@@ -8,6 +8,6 @@ steps:
     - name: 'gcr.io/$PROJECT_ID/appinfo'
       #entrypoint : python AppInfo.py
       entrypoint: /bin/sh
-      args ['-c', 'python AppUT.py']
+      args: ['-c', 'python AppUT.py']
       #args: ['run','gcr.io/$PROJECT_ID/appinfo']
 images: ['gcr.io/pure-night-216804/appinfo:$SHORT_SHA']
