@@ -8,9 +8,9 @@ from flask import request, jsonify
 def startunittest():
     print ("Starting unit test")
     
-    #urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
+    urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
     
-    tagurlid = "http://localhost:5000"
+    
     
     headers = {
  
@@ -18,7 +18,7 @@ def startunittest():
       "User-Agent" : "sidshukla-github"  
     }
 
-    response = requests.request("GET", tagurlid, headers=headers)
+    response = requests.request("GET", urlid, headers=headers)
 
     print ("response is ", response.status_code)
 
