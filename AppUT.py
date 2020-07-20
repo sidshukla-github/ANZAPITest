@@ -10,7 +10,7 @@ def startunittest():
     
     #urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
     
-    tagurlid = "http://localhost:5000/api/V1/version"
+    tagurlid = "http://localhost:5000"
     
     headers = {
  
