@@ -11,6 +11,7 @@ steps:
     #  args: ['-c', 'python AppUT.py']
       #args: ['run','gcr.io/$PROJECT_ID/appinfo']
     - name: 'gcr.io/cloud-builders/docker'
-      entrypoint: '/bin/sh'
-      args: ['-c', 'docker run gcr.io/$PROJECT_ID/appinfo', '--entrypoint python AppUT.py']    
+      #entrypoint: '/bin/sh'
+      #args: ['-c', 'docker run gcr.io/$PROJECT_ID/appinfo', '--entrypoint', 'python AppUT.py']  
+      args: ['run', '--entrypoint', 'python AppInfo.py','gcr.io/$PROJECT_ID/appinfo' ]  
 images: ['gcr.io/pure-night-216804/appinfo:$SHORT_SHA']
