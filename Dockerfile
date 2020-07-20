@@ -13,4 +13,8 @@ RUN pip install flask
 
 RUN pip install requests
 
+RUN chmod +x AppInfo.py
+
+RUN chmod +x AppUT.py
+
 CMD [ "python", "./AppInfo.py" ]
