@@ -5,6 +5,4 @@ steps:
          '-t',
          'gcr.io/$PROJECT_ID/appinfo:$SHORT_SHA',
          '.']
-substitutions:
-        _NODE_VERSION_1: $SHORT_SHA
 images: ['gcr.io/pure-night-216804/appinfo:$SHORT_SHA']
