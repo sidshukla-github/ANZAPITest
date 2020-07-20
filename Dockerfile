@@ -21,4 +21,3 @@ RUN chmod +x AppUT.py
 
 ENTRYPOINT ["python", "AppInfo.py"]
 
-EXPOSE 8080
