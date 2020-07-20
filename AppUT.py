@@ -8,15 +8,17 @@ from flask import request, jsonify
 def startunittest():
     print ("Starting unit test")
     
-    urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
-    tagurlid = "https://api.github.com/repos/sidshukla-github/ANZAPITest/tags"
+    #urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
+    
+    tagurlid = "http://localhost:5000/api/V1/version"
+    
     headers = {
  
       "Content-Type": "application/json",
-      "User-Agent" : "sidshukla-githubv"  
+      "User-Agent" : "sidshukla-github"  
     }
 
-    response = requests.request("GET", urlid, headers=headers)
+    response = requests.request("GET", tagurlid, headers=headers)
 
     print ("response is ", response.status_code)
 
