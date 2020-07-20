@@ -7,6 +7,6 @@ from flask import request, jsonify
 
 def test():
     print ("hellow world")
-    sys.exit(-1)
+    sys.exit(0)
 
 test()
