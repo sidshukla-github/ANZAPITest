@@ -7,7 +7,7 @@ steps:
          '.']
     - name: 'gcr.io/$PROJECT_ID/appinfo'
       entrypoint : /bin/sh
-      args: ['-c',''python AppUT.py'']
+      args: ['-c', 'python AppUT.py']
     #  entrypoint: /bin/sh
     #  args: ['-c', 'python AppUT.py']
       #args: ['run','gcr.io/$PROJECT_ID/appinfo']
