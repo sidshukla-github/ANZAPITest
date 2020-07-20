@@ -8,7 +8,9 @@ from flask import request, jsonify
 def startunittest():
     print ("Starting unit test")
     
-    urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
+    #urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
+
+    urlid = 'http://localhost:8080'
     
     
     
