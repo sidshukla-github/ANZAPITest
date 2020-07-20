@@ -6,7 +6,8 @@ steps:
          'gcr.io/$PROJECT_ID/appinfo:$SHORT_SHA',
          '.']
     - name: 'gcr.io/$PROJECT_ID/appinfo'
-      entrypoint : python AppInfo.py
+      entrypoint : /bin/sh
+      args: ['ls']
     #  entrypoint: /bin/sh
     #  args: ['-c', 'python AppUT.py']
       #args: ['run','gcr.io/$PROJECT_ID/appinfo']
