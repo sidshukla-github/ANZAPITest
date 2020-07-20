@@ -17,6 +17,6 @@ RUN chmod +x AppInfo.py
 
 RUN chmod +x AppUT.py
 
-CMD [AppInfo.py]
+#CMD [ "AppInfo.py" ]
 
-ENTRYPOINT ["python"]
+ENTRYPOINT ["python", "AppInfo.py"]

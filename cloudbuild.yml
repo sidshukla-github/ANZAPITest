@@ -5,6 +5,7 @@ steps:
          '-t',
          'gcr.io/$PROJECT_ID/appinfo:$SHORT_SHA',
          '.']
-    - name: 'gcr.io/cloud-builders/docker'
-      entrypoint : 'python AppInfo.py'
+    - name: 'gcr.io/$PROJECT_ID/appinfo'
+      #entrypoint : 'python AppInfo.py'
+      #args: ['run','gcr.io/$PROJECT_ID/appinfo']
 images: ['gcr.io/pure-night-216804/appinfo:$SHORT_SHA']
