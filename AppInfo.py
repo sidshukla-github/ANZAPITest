@@ -5,15 +5,6 @@ import sys
 import flask 
 from flask import request, jsonify
 
-appdetail = {
-    "myapplication": [
-{
-"version": "1.0",
-"lastcommitsha": "abc57858585",
-"description" : "pre-interview technical test"
-}
-]
-}
 
 urlid = 'https://api.github.com/repos/sidshukla-github/ANZAPITest/commits'
 
@@ -21,15 +12,15 @@ tagurlid = "https://api.github.com/repos/sidshukla-github/ANZAPITest/tags"
 
 
 
-if len(sys.argv) == 1:
-    authtoken = os.environ.get('AUTH_TOKEN')
-else:
-    authtoken = sys.argv[1] + sys.argv[2]
+#if len(sys.argv) == 1:
+ #   authtoken = os.environ.get('AUTH_TOKEN')
+#else:
+ #   authtoken = sys.argv[1] + sys.argv[2]
 
-
+#print ("authtoke ", authtoken)
 
 headers = {
-    "Authorization" : authtoken,
+ #   "Authorization" : authtoken,
       "Content-Type": "application/json",
       "User-Agent" : "sidshukla-github"  
     }
